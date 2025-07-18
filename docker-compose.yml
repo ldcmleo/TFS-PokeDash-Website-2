@@ -1,0 +1,12 @@
+services:
+  php:
+    image: php:8.2-fpm
+    container_name: php-website
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - forgottenserver-network
+
+networks:
+  forgottenserver-network:
+    external: true
