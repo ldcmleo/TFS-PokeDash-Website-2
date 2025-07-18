@@ -7,8 +7,8 @@ services:
     ports:
       - "9000:9000"
     networks:
-      - forgottenserver-network
+      - poke-server_forgottenserver-network
 
 networks:
-  forgottenserver-network:
+  poke-server_forgottenserver-network:
     external: true
